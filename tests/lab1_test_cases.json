@@ -1,0 +1,24 @@
+{
+  "cases": {
+      "1": {
+          "input": ["ATGCGGGT", "TGCCGGT"],
+          "penalty": [1, -1, -1],
+          "output": [4, "ATGCGGGT", "-TGCCGGT"]
+      },
+      "2": {
+          "input": ["GTCGACGCA", "GATTACA"],
+          "penalty": [1, -1, -1],
+          "output": [0, "G-TCGACGCA", "GATT-AC--A"]
+      },
+      "3": {
+          "input": ["ATGCGGGT", "TGCCGGT"],
+          "penalty": [1, -1, -2],
+          "output": [3, "ATGCGGGT", "-TGCCGGT"]
+      },
+      "4": {
+          "input": ["GTCGACGCA", "GATTACA"],
+          "penalty": [1, -1, -2],
+          "output": [-3, "GTCGACGCA", "GATTAC--A"]
+      }
+  }
+}
